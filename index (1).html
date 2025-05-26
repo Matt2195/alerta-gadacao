@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>ALERTA!</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: red;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: piscarTela 1s infinite;
+        }
+
+        .mensagem {
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px black;
+            animation: piscarTexto 0.8s infinite;
+        }
+
+        @keyframes piscarTela {
+            0%, 100% { background-color: red; }
+            50% { background-color: darkred; }
+        }
+
+        @keyframes piscarTexto {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.2; }
+        }
+    </style>
+</head>
+<body>
+    <div class="mensagem">
+        PERIGO:<br>ALTO RISCO DE GADAÇÃO!
+    </div>
+</body>
+</html>
